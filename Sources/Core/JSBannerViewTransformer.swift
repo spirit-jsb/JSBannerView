@@ -199,7 +199,7 @@ open class JSBannerViewTransformer: NSObject {
                 transform = transform.translatedBy(x: -(position) * itemSpacing, y: ty)
                 transform = transform.rotated(by: rotation)
                 transform = transform.translatedBy(x: 0.0, y: -ty)
-                zIndex = Int(4.0 - abs(position) * 1.0)
+                zIndex = Int(4.0 - abs(position) * 10.0)
             default:
                 break
             }
