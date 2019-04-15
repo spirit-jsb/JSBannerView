@@ -175,6 +175,7 @@ open class JSBannerView: UIView {
     // MARK:
     public override init(frame: CGRect) {
         super.init(frame: frame)
+        self.initialize()
     }
     
     public required init?(coder aDecoder: NSCoder) {
