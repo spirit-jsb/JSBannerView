@@ -166,8 +166,8 @@ open class JSBannerViewTransformer: NSObject {
             attributes.transform = transform
             let alpha = self.minimumAlpha + (1.0 - abs(position)) * (1.0 - self.minimumAlpha)
             attributes.alpha = alpha
-            let zIndex = (1.0 - abs(position)) * 10.0
-            attributes.zIndex = Int(zIndex)
+            let zIndex = Int((1.0 - abs(position)) * 10.0)
+            attributes.zIndex = zIndex
         case .coverFlow:
             guard scrollDirection == .horizontal else {
                 return
