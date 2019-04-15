@@ -11,11 +11,11 @@ import UIKit
 class JSBannerViewLayout: UICollectionViewLayout {
 
     // MARK:
-    internal var contentSize: CGSize = .zero
-    internal var leadingSpacing: CGFloat = 0.0
-    internal var itemSpacing: CGFloat = 0.0
-    internal var needsReprepare: Bool = true
-    internal var scrollDirection: JSBannerView.ScrollDirection = .horizontal
+    var contentSize: CGSize = .zero
+    var leadingSpacing: CGFloat = 0.0
+    var itemSpacing: CGFloat = 0.0
+    var needsReprepare: Bool = true
+    var scrollDirection: JSBannerView.ScrollDirection = .horizontal
     
     fileprivate var collectionViewSize: CGSize = .zero
     fileprivate var numberOfSections: Int = 1
@@ -206,12 +206,12 @@ class JSBannerViewLayout: UICollectionViewLayout {
     }
     
     // MARK:
-    internal func forceInvalidate() {
+    func forceInvalidate() {
         self.needsReprepare = true
         self.invalidateLayout()
     }
     
-    internal func contentOffset(for indexPath: IndexPath) -> CGPoint {
+    func contentOffset(for indexPath: IndexPath) -> CGPoint {
         let origin = self.frame(for: indexPath).origin
         guard let collectionView = self.collectionView else {
             return origin
@@ -234,7 +234,7 @@ class JSBannerViewLayout: UICollectionViewLayout {
         return contentOffset
     }
 
-    internal func frame(for indexPath: IndexPath) -> CGRect {
+    func frame(for indexPath: IndexPath) -> CGRect {
         let numberOfItems = self.numberOfItems * indexPath.section + indexPath.item
         let originX: CGFloat = {
             if self.scrollDirection == .vertical {

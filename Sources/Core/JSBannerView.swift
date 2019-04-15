@@ -127,12 +127,12 @@ open class JSBannerView: UIView {
     
     open fileprivate(set) var currentIndex: Int = 0
     
-    internal weak var collectionViewLayout: JSBannerViewLayout!
-    internal weak var collectionView: JSBannerCollectionView!
-    internal weak var contentView: UIView!
-    internal var timer: Timer?
-    internal var numberOfItems: Int = 0
-    internal var numberOfSections: Int = 0
+    weak var collectionViewLayout: JSBannerViewLayout!
+    weak var collectionView: JSBannerCollectionView!
+    weak var contentView: UIView!
+    var timer: Timer?
+    var numberOfItems: Int = 0
+    var numberOfSections: Int = 0
     
     fileprivate var dequeingSection: Int = 0
     
