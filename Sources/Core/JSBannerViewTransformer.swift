@@ -62,7 +62,7 @@ open class JSBannerViewTransformer: NSObject {
         default:
             break
         }
-        return bannerView.interitemSpacing
+        return bannerView.interItemSpacing
     }
     
     open func applyTransform(to attributes: JSBannerViewLayoutAttributes) {

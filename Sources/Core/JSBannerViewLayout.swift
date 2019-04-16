@@ -75,7 +75,7 @@ class JSBannerViewLayout: UICollectionViewLayout {
             if let transformer = bannerView.transformer {
                 return transformer.proposedInterItemSpacing()
             }
-            return bannerView.interitemSpacing
+            return bannerView.interItemSpacing
         }()
         self.scrollDirection = bannerView.scrollDirection
         self.leadingSpacing = self.scrollDirection == .horizontal ?

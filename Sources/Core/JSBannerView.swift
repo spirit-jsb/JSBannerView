@@ -68,7 +68,7 @@ open class JSBannerView: UIView {
         }
     }
     
-    open var interitemSpacing: CGFloat = 0.0 {
+    open var interItemSpacing: CGFloat = 0.0 {
         didSet {
             self.collectionViewLayout.forceInvalidate()
         }
