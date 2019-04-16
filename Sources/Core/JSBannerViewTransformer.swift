@@ -127,7 +127,7 @@ open class JSBannerViewTransformer: NSObject {
             var zIndex = 0
             var transform = CGAffineTransform.identity
             switch position {
-            case -(CGFloat.greatestFiniteMagnitude) ..< -1 :
+            case -(CGFloat.greatestFiniteMagnitude) ..< -1.0 :
                 alpha = 0.0
                 zIndex = 0
             case -1.0 ... 0.0 :
