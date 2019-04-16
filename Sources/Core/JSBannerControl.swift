@@ -13,7 +13,7 @@ open class JSBannerControl: UIControl {
     // MARK:
     open var numberOfPages: Int = 0 {
         didSet {
-            self.setNeedsUpdateIndicators()
+            self.setNeedsCreateIndicators()
         }
     }
     
