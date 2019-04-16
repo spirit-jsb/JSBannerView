@@ -31,7 +31,7 @@ open class JSBannerViewTransformer: NSObject {
     }
     
     // MARK:
-    open func proposedInteritemSpacing() -> CGFloat {
+    open func proposedInterItemSpacing() -> CGFloat {
         guard let bannerView = self.bannerView else {
             return 0.0
         }
@@ -71,7 +71,7 @@ open class JSBannerViewTransformer: NSObject {
         }
         let position = attributes.position
         let scrollDirection = bannerView.scrollDirection
-        let itemSpacing = (scrollDirection == .horizontal ? attributes.bounds.width : attributes.bounds.height) + self.proposedInteritemSpacing()
+        let itemSpacing = (scrollDirection == .horizontal ? attributes.bounds.width : attributes.bounds.height) + self.proposedInterItemSpacing()
         switch self.type {
         case .crossFading:
             var alpha: CGFloat = 0.0
@@ -189,7 +189,7 @@ open class JSBannerViewTransformer: NSObject {
             var transform = CGAffineTransform.identity
             switch position {
             case -5.0 ... 5.0 :
-                let itemSpacing = attributes.bounds.width + self.proposedInteritemSpacing()
+                let itemSpacing = attributes.bounds.width + self.proposedInterItemSpacing()
                 let count: CGFloat = 14.0
                 let circle: CGFloat = .pi * 2.0
                 let radius = itemSpacing * count / circle

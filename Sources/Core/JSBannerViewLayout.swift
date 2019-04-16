@@ -73,7 +73,7 @@ class JSBannerViewLayout: UICollectionViewLayout {
         
         self.actualInteritemSpacing = {
             if let transformer = bannerView.transformer {
-                return transformer.proposedInteritemSpacing()
+                return transformer.proposedInterItemSpacing()
             }
             return bannerView.interitemSpacing
         }()
