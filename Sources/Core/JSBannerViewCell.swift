@@ -15,19 +15,20 @@ open class JSBannerViewCell: UICollectionViewCell {
         if let _ = self.textLabel_ {
             return self.textLabel_
         }
+        
         let view = UIView(frame: .zero)
-        view.isUserInteractionEnabled = false
         view.backgroundColor = UIColor.black.withAlphaComponent(0.6)
+        view.isUserInteractionEnabled = false
+        self.contentView.addSubview(view)
         
         let textLabel = UILabel(frame: .zero)
         textLabel.textColor = .white
         textLabel.font = UIFont.preferredFont(forTextStyle: .body)
-        self.contentView.addSubview(view)
-        view.addSubview(textLabel)
-        
         textLabel.addObserver(self, forKeyPath: "font", options: [.old, .new], context: self.kvoContext)
-        
+        view.addSubview(textLabel)
+
         self.textLabel_ = textLabel
+        
         return textLabel
     }
     
@@ -35,15 +36,18 @@ open class JSBannerViewCell: UICollectionViewCell {
         if let _ = self.imageView_ {
             return self.imageView_
         }
+        
         let imageView = UIImageView(frame: .zero)
         self.contentView.addSubview(imageView)
-        
+
         self.imageView_ = imageView
+        
         return imageView
     }
     
     fileprivate weak var textLabel_: UILabel?
     fileprivate weak var imageView_: UIImageView?
+    fileprivate weak var selectedForegroundView_: UIView?
     
     fileprivate let kvoContext = UnsafeMutableRawPointer(bitPattern: 0)
     fileprivate let selectionColor = UIColor(white: 0.2, alpha: 0.2)
@@ -55,12 +59,14 @@ open class JSBannerViewCell: UICollectionViewCell {
         guard let imageView = self.imageView_ else {
             return nil
         }
+        
         let view = UIView(frame: imageView.bounds)
         imageView.addSubview(view)
+        
         self.selectedForegroundView_ = view
+        
         return view
     }
-    fileprivate weak var selectedForegroundView_: UIView?
     
     // MARK:
     public override init(frame: CGRect) {
