@@ -104,7 +104,7 @@ open class JSBannerControl: UIControl {
                 return midX - amplitude
             case .right, .trailing:
                 let contentWidth = diameter * CGFloat(self.numberOfPages) + spacing * CGFloat(self.numberOfPages - 1)
-                return contentView.frame.width - contentWidth
+                return self.contentView.frame.width - contentWidth
             }
         }()
         for (index, value) in self.indicatorLayers.enumerated() {
@@ -160,11 +160,13 @@ open class JSBannerControl: UIControl {
 
     // MARK:
     fileprivate func initialize() {
+        self.isUserInteractionEnabled = false
+        
         let view = UIView(frame: .zero)
         view.backgroundColor = UIColor.clear
         self.addSubview(view)
+        
         self.contentView = view
-        self.isUserInteractionEnabled = false
     }
     
     fileprivate func setNeedsUpdateIndicators() {

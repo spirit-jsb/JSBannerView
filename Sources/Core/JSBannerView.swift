@@ -267,6 +267,7 @@ open class JSBannerView: UIView {
         let contentView = UIView(frame: .zero)
         contentView.backgroundColor = UIColor.clear
         self.addSubview(contentView)
+        
         self.contentView = contentView
         
         let collectionViewLayout = JSBannerViewLayout()
