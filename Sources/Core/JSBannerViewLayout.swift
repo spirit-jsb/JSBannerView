@@ -118,8 +118,8 @@ class JSBannerViewLayout: UICollectionViewLayout {
         }
         
         let numberOfItemsBefore = self.scrollDirection == .horizontal ?
-            max(Int((rect.midX - self.leadingSpacing) / self.itemSpacing), 0) :
-            max(Int((rect.midY - self.leadingSpacing) / self.itemSpacing), 0)
+            max(Int((rect.minX - self.leadingSpacing) / self.itemSpacing), 0) :
+            max(Int((rect.minY - self.leadingSpacing) / self.itemSpacing), 0)
         let startPosition = self.leadingSpacing + CGFloat(numberOfItemsBefore) * self.itemSpacing
         let startIndex = numberOfItemsBefore
         
