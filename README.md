@@ -2,7 +2,7 @@
 
 <p align="center">
 <a href="https://github.com/apple/swift"><img src="https://img.shields.io/badge/language-swift-red.svg"></a>
-<a href="https://github.com/apple/swift"><img src="https://img.shields.io/badge/swift%20version-4.2-orange.svg"></a>
+<a href="https://github.com/apple/swift"><img src="https://img.shields.io/badge/swift%20version-5.0-orange.svg"></a>
 <a href="https://github.com/spirit-jsb/JSBannerView/"><img src="https://img.shields.io/cocoapods/v/JSBannerView.svg?style=flat"></a>
 <a href="https://github.com/spirit-jsb/JSBannerView/blob/master/LICENSE"><img src="https://img.shields.io/cocoapods/l/JSBannerView.svg?style=flat"></a>
 <a href="https://cocoapods.org/pods/JSBannerView"><img src="https://img.shields.io/cocoapods/p/JSBannerView.svg?style=flat"></a>
@@ -19,18 +19,19 @@
 | Swift | JSBannerView |
 | ------| -------------|
 | 4.2   | >= 1.0.0     |
+| 5.0   | >= 1.1.0     |
 
 ## 限制条件
 * **iOS 9.0** and Up
 * **Xcode 10.0** and Up
-* **Swift Version = 4.2**
+* **Swift Version = 5.0**
 
 ## 安装
 
 `JSBannerView` 可以通过 [CocoaPods](https://cocoapods.org) 获得。安装只需要在你项目的 `Podfile` 中添加如下字段：
 
 ```ruby
-pod 'JSBannerView', '~> 1.0.0'
+pod 'JSBannerView', '~> 1.1.0'
 ```
 
 ## 作者
