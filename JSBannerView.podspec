@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
     s.name             = 'JSBannerView'
-    s.version          = '1.0.0'
+    s.version          = '1.1.0'
     s.summary          = '一个简便易用的Banner框架。'
   
     s.description      = <<-DESC
@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
   
     s.author           = { 'spirit-jsb' => 'sibo_jian_29903549@163.com' }
   
-    s.swift_version = '4.2'
+    s.swift_version = '5.0'
   
     s.ios.deployment_target = '9.0'
   
