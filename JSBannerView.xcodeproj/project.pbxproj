@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		503A331A2282AB5B00A501C1 /* BannerModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503A33192282AB5B00A501C1 /* BannerModelType.swift */; };
+		503A331C2282AB7800A501C1 /* BannerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503A331B2282AB7800A501C1 /* BannerModel.swift */; };
+		503A331E2282ABAB00A501C1 /* BannerDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503A331D2282ABAB00A501C1 /* BannerDataSource.swift */; };
+		503A33202282AEBD00A501C1 /* RxBannerDataSourceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503A331F2282AEBD00A501C1 /* RxBannerDataSourceType.swift */; };
+		503A33222282AEFE00A501C1 /* RxBannerReloadDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503A33212282AEFE00A501C1 /* RxBannerReloadDataSource.swift */; };
+		503A33242282AFA900A501C1 /* RxBannerDataSourceProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503A33232282AFA900A501C1 /* RxBannerDataSourceProxy.swift */; };
+		503A33262282B16F00A501C1 /* RxBannerDelegateProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503A33252282B16F00A501C1 /* RxBannerDelegateProxy.swift */; };
+		503A33282282B1D500A501C1 /* BannerView+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503A33272282B1D500A501C1 /* BannerView+Rx.swift */; };
+		503A332C2282C1F000A501C1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 503A332B2282C1F000A501C1 /* UIKit.framework */; };
+		503A332E2282C20700A501C1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 503A332D2282C20700A501C1 /* Foundation.framework */; };
+		503A33362282C58B00A501C1 /* RxBannerExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503A33342282C4EC00A501C1 /* RxBannerExampleViewController.swift */; };
 		504420F722642771003CC3F0 /* JSBannerControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504420F622642771003CC3F0 /* JSBannerControl.swift */; };
 		504420FA22645682003CC3F0 /* TransformerExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504420F922645682003CC3F0 /* TransformerExampleViewController.swift */; };
 		504421032264685B003CC3F0 /* 4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 504420FC2264685B003CC3F0 /* 4.jpg */; };
@@ -61,6 +72,17 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		503A33192282AB5B00A501C1 /* BannerModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerModelType.swift; sourceTree = "<group>"; };
+		503A331B2282AB7800A501C1 /* BannerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerModel.swift; sourceTree = "<group>"; };
+		503A331D2282ABAB00A501C1 /* BannerDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerDataSource.swift; sourceTree = "<group>"; };
+		503A331F2282AEBD00A501C1 /* RxBannerDataSourceType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxBannerDataSourceType.swift; sourceTree = "<group>"; };
+		503A33212282AEFE00A501C1 /* RxBannerReloadDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxBannerReloadDataSource.swift; sourceTree = "<group>"; };
+		503A33232282AFA900A501C1 /* RxBannerDataSourceProxy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxBannerDataSourceProxy.swift; sourceTree = "<group>"; };
+		503A33252282B16F00A501C1 /* RxBannerDelegateProxy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxBannerDelegateProxy.swift; sourceTree = "<group>"; };
+		503A33272282B1D500A501C1 /* BannerView+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BannerView+Rx.swift"; sourceTree = "<group>"; };
+		503A332B2282C1F000A501C1 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		503A332D2282C20700A501C1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		503A33342282C4EC00A501C1 /* RxBannerExampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxBannerExampleViewController.swift; sourceTree = "<group>"; };
 		504420F622642771003CC3F0 /* JSBannerControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSBannerControl.swift; sourceTree = "<group>"; };
 		504420F922645682003CC3F0 /* TransformerExampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransformerExampleViewController.swift; sourceTree = "<group>"; };
 		504420FC2264685B003CC3F0 /* 4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 4.jpg; sourceTree = "<group>"; };
@@ -97,6 +119,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				503A332E2282C20700A501C1 /* Foundation.framework in Frameworks */,
+				503A332C2282C1F000A501C1 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -111,6 +135,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		503A33182282AB3C00A501C1 /* RxBannerView */ = {
+			isa = PBXGroup;
+			children = (
+				503A33192282AB5B00A501C1 /* BannerModelType.swift */,
+				503A331B2282AB7800A501C1 /* BannerModel.swift */,
+				503A331D2282ABAB00A501C1 /* BannerDataSource.swift */,
+				503A331F2282AEBD00A501C1 /* RxBannerDataSourceType.swift */,
+				503A33212282AEFE00A501C1 /* RxBannerReloadDataSource.swift */,
+				503A33232282AFA900A501C1 /* RxBannerDataSourceProxy.swift */,
+				503A33252282B16F00A501C1 /* RxBannerDelegateProxy.swift */,
+				503A33272282B1D500A501C1 /* BannerView+Rx.swift */,
+			);
+			path = RxBannerView;
+			sourceTree = "<group>";
+		};
+		503A332A2282C1EF00A501C1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				503A332D2282C20700A501C1 /* Foundation.framework */,
+				503A332B2282C1F000A501C1 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		503A33332282C46A00A501C1 /* RxBannerView */ = {
+			isa = PBXGroup;
+			children = (
+				503A33342282C4EC00A501C1 /* RxBannerExampleViewController.swift */,
+			);
+			path = RxBannerView;
+			sourceTree = "<group>";
+		};
 		504420FB2264685B003CC3F0 /* Images */ = {
 			isa = PBXGroup;
 			children = (
@@ -131,6 +187,7 @@
 				50675C50225F46A9005138F8 /* Sources */,
 				50675C41225F469B005138F8 /* Demo */,
 				50675C06225F460A005138F8 /* Products */,
+				503A332A2282C1EF00A501C1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -159,6 +216,7 @@
 			isa = PBXGroup;
 			children = (
 				50675C55225F46C4005138F8 /* Core */,
+				503A33182282AB3C00A501C1 /* RxBannerView */,
 				50675C51225F46A9005138F8 /* JSBannerView.h */,
 				50675C52225F46A9005138F8 /* Info.plist */,
 			);
@@ -230,6 +288,7 @@
 				509095282265A2BA00E9DAE4 /* BasicExampleViewController.swift */,
 				504420F922645682003CC3F0 /* TransformerExampleViewController.swift */,
 				5090952A2265BCA100E9DAE4 /* PageControlExampleViewController.swift */,
+				503A33332282C46A00A501C1 /* RxBannerView */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -256,6 +315,7 @@
 				50675C01225F460A005138F8 /* Sources */,
 				50675C02225F460A005138F8 /* Frameworks */,
 				50675C03225F460A005138F8 /* Resources */,
+				503A33172282AADB00A501C1 /* Carthage */,
 			);
 			buildRules = (
 			);
@@ -352,6 +412,26 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		503A33172282AADB00A501C1 /* Carthage */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/RxSwift.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxCocoa.framework",
+			);
+			name = Carthage;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n/usr/local/bin/carthage copy-frameworks\n";
+		};
 		504420F8226451E1003CC3F0 /* Carthage */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -361,6 +441,8 @@
 			);
 			inputPaths = (
 				"$(SRCROOT)/Carthage/Build/iOS/Kingfisher.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxSwift.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxCocoa.framework",
 			);
 			name = Carthage;
 			outputFileListPaths = (
@@ -379,15 +461,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				506825CB22601F710071B110 /* JSBannerViewLayoutAttributes.swift in Sources */,
+				503A331A2282AB5B00A501C1 /* BannerModelType.swift in Sources */,
+				503A33202282AEBD00A501C1 /* RxBannerDataSourceType.swift in Sources */,
+				503A33222282AEFE00A501C1 /* RxBannerReloadDataSource.swift in Sources */,
 				506825D9226036470071B110 /* JSBannerViewTransformer.swift in Sources */,
+				503A33242282AFA900A501C1 /* RxBannerDataSourceProxy.swift in Sources */,
+				503A331C2282AB7800A501C1 /* BannerModel.swift in Sources */,
+				503A33282282B1D500A501C1 /* BannerView+Rx.swift in Sources */,
 				504420F722642771003CC3F0 /* JSBannerControl.swift in Sources */,
 				506825D72260319B0071B110 /* JSBannerViewDelegate.swift in Sources */,
 				506825D3226030DD0071B110 /* JSBannerViewDataSource.swift in Sources */,
+				503A33262282B16F00A501C1 /* RxBannerDelegateProxy.swift in Sources */,
 				506825CF2260249F0071B110 /* JSBannerViewConstant.swift in Sources */,
 				506825D5226031270071B110 /* JSBannerView.swift in Sources */,
 				506825CD226022B40071B110 /* JSBannerCollectionView.swift in Sources */,
 				506825D12260250A0071B110 /* JSBannerViewCell.swift in Sources */,
 				506825DB22604E260071B110 /* JSBannerViewLayout.swift in Sources */,
+				503A331E2282ABAB00A501C1 /* BannerDataSource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -396,6 +486,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				504420FA22645682003CC3F0 /* TransformerExampleViewController.swift in Sources */,
+				503A33362282C58B00A501C1 /* RxBannerExampleViewController.swift in Sources */,
 				50675C68225F4704005138F8 /* AppDelegate.swift in Sources */,
 				5090952B2265BCA100E9DAE4 /* PageControlExampleViewController.swift in Sources */,
 				509095292265A2BA00E9DAE4 /* BasicExampleViewController.swift in Sources */,
@@ -567,6 +658,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/Carthage/Build/iOS";
 				INFOPLIST_FILE = Sources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -594,6 +686,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/Carthage/Build/iOS";
 				INFOPLIST_FILE = Sources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
