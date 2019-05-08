@@ -90,6 +90,29 @@
                                             <segue destination="Kk4-XD-V11" kind="show" id="P8Y-wt-8yK"/>
                                         </connections>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="uPf-Xo-niH">
+                                        <rect key="frame" x="0.0" y="150" width="375" height="50"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="uPf-Xo-niH" id="Dmy-oD-Go2">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="49.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rx Example" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pm1-N2-Jab">
+                                                    <rect key="frame" x="12" y="14.5" width="88.5" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="pm1-N2-Jab" firstAttribute="centerY" secondItem="Dmy-oD-Go2" secondAttribute="centerY" id="UV9-vM-LGP"/>
+                                                <constraint firstItem="pm1-N2-Jab" firstAttribute="leading" secondItem="Dmy-oD-Go2" secondAttribute="leading" constant="12" id="ctd-iR-PJC"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="p9V-yj-vLz" kind="show" id="zHj-zA-ffC"/>
+                                        </connections>
+                                    </tableViewCell>
                                 </cells>
                             </tableViewSection>
                         </sections>
@@ -229,7 +252,22 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tOY-8N-ej3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2906" y="-1057"/>
+            <point key="canvasLocation" x="2900" y="-1057"/>
+        </scene>
+        <!--JSBannerView-->
+        <scene sceneID="bmN-ua-Sax">
+            <objects>
+                <viewController title="JSBannerView" id="p9V-yj-vLz" customClass="RxBannerExampleViewController" customModule="JSBannerView_Demo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="TIj-A4-Cin">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="QBE-us-vCn"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W92-PF-C43" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3668" y="-1048"/>
         </scene>
         <!--JSBannerView-->
         <scene sceneID="DDh-bK-jM8">
