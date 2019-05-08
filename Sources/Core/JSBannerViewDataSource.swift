@@ -8,9 +8,9 @@
 
 import Foundation
 
-public protocol JSBannerViewDataSource: NSObjectProtocol {
+@objc public protocol JSBannerViewDataSource: NSObjectProtocol {
     
-    func numberOfItems(in bannerView: JSBannerView) -> Int
+    @objc func numberOfItems(in bannerView: JSBannerView) -> Int
     
-    func bannerView(_ bannerView: JSBannerView, cellForItemAt index: Int) -> JSBannerViewCell
+    @objc func bannerView(_ bannerView: JSBannerView, cellForItemAt index: Int) -> JSBannerViewCell
 }
