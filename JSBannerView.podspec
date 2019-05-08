@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
     s.name             = 'JSBannerView'
-    s.version          = '1.1.0'
+    s.version          = '1.1.1'
     s.summary          = '一个简便易用的Banner框架。'
   
     s.description      = <<-DESC
@@ -22,7 +22,16 @@ Pod::Spec.new do |s|
     
     s.source_files = 'Sources/**/*.swift'
     
-    s.requires_arc = true
-    s.frameworks = 'UIKit', 'Foundation'
+    s.subspec "Core" do |ss|
+      ss.source_files = "Sources/Core/"
+      ss.frameworks = 'UIKit', 'Foundation'
+    end
+
+    s.subspec "RxSwift" do |ss|
+      ss.source_files = "Sources/RxBannerView/"
+      ss.dependency "JSBannerView/Core"
+      ss.dependency "RxSwift", "~> 4.0"
+      ss.dependency "RxCocoa", "~> 4.0"
+    end
   
   end
