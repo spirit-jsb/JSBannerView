@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
     s.name             = 'JSBannerView'
-    s.version          = '1.1.1'
+    s.version          = '1.1.2'
     s.summary          = '一个简便易用的Banner框架。'
   
     s.description      = <<-DESC
@@ -30,8 +30,8 @@ Pod::Spec.new do |s|
     s.subspec "RxSwift" do |ss|
       ss.source_files = "Sources/RxBannerView/"
       ss.dependency "JSBannerView/Core"
-      ss.dependency "RxSwift", "~> 4.0"
-      ss.dependency "RxCocoa", "~> 4.0"
+      ss.dependency "RxSwift", "~> 5.0"
+      ss.dependency "RxCocoa", "~> 5.0"
     end
   
   end
