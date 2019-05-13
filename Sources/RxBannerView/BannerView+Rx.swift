@@ -22,7 +22,7 @@ extension Reactive where Base: JSBannerView {
     public func item<DataSource: RxBannerDataSourceType & JSBannerViewDataSource, O: ObservableType>
         (dataSource: DataSource)
         -> (_ source: O)
-        -> Disposable where DataSource.Element == O.E
+        -> Disposable where DataSource.Element == O.Element
     {
         return { source in
             // This is called for sideeffects only, and to make sure delegate proxy is in place when
@@ -53,7 +53,7 @@ extension ObservableType {
         (ofObject object: DelegateProxy.ParentObject,
          dataSource: DelegateProxy.Delegate,
          retainDataSource: Bool,
-         binding: @escaping (DelegateProxy, Event<E>) -> Void)
+         binding: @escaping (DelegateProxy, Event<Element>) -> Void)
         -> Disposable where DelegateProxy.ParentObject: UIView, DelegateProxy.Delegate: AnyObject
     {
         let proxy = DelegateProxy.proxy(for: object)
@@ -70,7 +70,7 @@ extension ObservableType {
             // source can never end, otherwise it would release the subscriber, and deallocate the data source
             .concat(Observable.never())
             .takeUntil(object.rx.deallocated)
-            .subscribe { [weak object] (event: Event<E>) in
+            .subscribe { [weak object] (event: Event<Element>) in
                 if let object = object {
                     assert(proxy === DelegateProxy.currentDelegate(for: object), "Proxy changed from the time it was first set.\nOriginal: \(proxy)\nExisting: \(String(describing: DelegateProxy.currentDelegate(for: object)))")
                 }
