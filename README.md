@@ -31,14 +31,14 @@ carthage update
 * **iOS 9.0** and Up
 * **Xcode 10.0** and Up
 * **Swift Version = 5.0**
-* **RxSwift Version >= 4.0**
+* **RxSwift Version >= 5.0**
 
 ## 安装
 
 `JSBannerView` 可以通过 [CocoaPods](https://cocoapods.org) 获得。安装只需要在你项目的 `Podfile` 中添加如下字段：
 
 ```ruby
-pod 'JSBannerView', '~> 1.1.1'
+pod 'JSBannerView', '~> 1.1.2'
 ```
 
 ## 作者
